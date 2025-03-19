@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "forgot_passwords",
+  "info": {
+    "singularName": "forgot-password",
+    "pluralName": "forgot-passwords",
+    "displayName": "Forgot Password",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "checkEmailText": {
+      "type": "text"
+    },
+    "emailPlaceholder": {
+      "type": "text"
+    },
+    "sendBtn": {
+      "type": "text"
+    },
+    "backToLoginText": {
+      "type": "text"
+    },
+    "emailRequiredText": {
+      "type": "text"
+    },
+    "resetInstructionsText": {
+      "type": "text"
+    },
+    "linkSentText": {
+      "type": "text"
+    },
+    "followInstructionsFirstText": {
+      "type": "text"
+    },
+    "anotherLinkBtn": {
+      "type": "text"
+    },
+    "vaildEmail": {
+      "type": "text"
+    },
+    "faildToSend": {
+      "type": "string"
+    },
+    "followInstructionsSecondText": {
+      "type": "text"
+    },
+    "sendLoadingBtn": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "logins",
+  "info": {
+    "singularName": "login",
+    "pluralName": "logins",
+    "displayName": "Login",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "emailPlaceholder": {
+      "type": "text"
+    },
+    "emailError": {
+      "type": "text"
+    },
+    "passwordPlaceholder": {
+      "type": "text"
+    },
+    "passwordError": {
+      "type": "text"
+    },
+    "forgotPasswordText": {
+      "type": "text"
+    },
+    "signinBtn": {
+      "type": "text"
+    },
+    "noAccountText": {
+      "type": "text"
+    },
+    "emailRequiredText": {
+      "type": "text"
+    },
+    "passwordRequiredText": {
+      "type": "text"
+    },
+    "invalidCredentialsText": {
+      "type": "text"
+    },
+    "signingLoadingText": {
+      "type": "text"
+    }
+  }
+}

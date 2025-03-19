@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "validateForm": {
+      "type": "text"
+    },
+    "messageSuccess": {
+      "type": "text"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "getInTouch": {
+      "type": "text"
+    },
+    "email": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "text"
+    },
+    "address": {
+      "type": "text"
+    },
+    "sendMessage": {
+      "type": "text"
+    },
+    "name": {
+      "type": "text"
+    },
+    "contactEmail": {
+      "type": "text"
+    },
+    "subject": {
+      "type": "text"
+    },
+    "message": {
+      "type": "text"
+    },
+    "sendMessageBtn": {
+      "type": "text"
+    }
+  }
+}

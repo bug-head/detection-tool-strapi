@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "landing_page_footers",
+  "info": {
+    "singularName": "landing-page-footer",
+    "pluralName": "landing-page-footers",
+    "displayName": "Landing Page Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "termsText": {
+      "type": "text"
+    },
+    "privacyText": {
+      "type": "text"
+    },
+    "contactText": {
+      "type": "text"
+    }
+  }
+}

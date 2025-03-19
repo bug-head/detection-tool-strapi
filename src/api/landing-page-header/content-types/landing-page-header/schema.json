@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "landing_page_headers",
+  "info": {
+    "singularName": "landing-page-header",
+    "pluralName": "landing-page-headers",
+    "displayName": "Landing Page Header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "signinBtn": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "kind": "singleType",
+  "collectionName": "sign_ups",
+  "info": {
+    "singularName": "sign-up",
+    "pluralName": "sign-ups",
+    "displayName": "Sign In",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "fullnamePlaceholder": {
+      "type": "text"
+    },
+    "emailPlaceholder": {
+      "type": "text"
+    },
+    "passwordPlaceholder": {
+      "type": "text"
+    },
+    "passwordError": {
+      "type": "text"
+    },
+    "confirmPasswordPlaceholder": {
+      "type": "text"
+    },
+    "confirmPasswordPlaceholderError": {
+      "type": "text"
+    },
+    "getStartedBtn": {
+      "type": "text"
+    },
+    "alreadyHaveText": {
+      "type": "text"
+    },
+    "emailExistText": {
+      "type": "text"
+    },
+    "misMatchPasswordText": {
+      "type": "text"
+    },
+    "emailRequiredText": {
+      "type": "text"
+    },
+    "nameRequiredText": {
+      "type": "text"
+    },
+    "passwordRequiredText": {
+      "type": "text"
+    },
+    "confirmPasswordText": {
+      "type": "text"
+    },
+    "getStartedLoadingText": {
+      "type": "text"
+    },
+    "signInText": {
+      "type": "text"
+    },
+    "signInFailed": {
+      "type": "text"
+    }
+  }
+}

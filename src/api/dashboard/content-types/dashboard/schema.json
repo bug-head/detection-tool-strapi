@@ -1,0 +1,114 @@
+{
+  "kind": "singleType",
+  "collectionName": "dashboards",
+  "info": {
+    "singularName": "dashboard",
+    "pluralName": "dashboards",
+    "displayName": "Dashboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "detectorBtn": {
+      "type": "text"
+    },
+    "recentDetectionsBtn": {
+      "type": "text"
+    },
+    "detectorHeadingText": {
+      "type": "text"
+    },
+    "detectorSubtileText": {
+      "type": "text"
+    },
+    "sampleText": {
+      "type": "text"
+    },
+    "humanBtn": {
+      "type": "text"
+    },
+    "chatGptBtn": {
+      "type": "text"
+    },
+    "claudeBtn": {
+      "type": "text"
+    },
+    "pasteText": {
+      "type": "text"
+    },
+    "detectorInputPlaceholder": {
+      "type": "text"
+    },
+    "checkForAIBtn": {
+      "type": "text"
+    },
+    "clearBtn": {
+      "type": "text"
+    },
+    "analyseBtn": {
+      "type": "text"
+    },
+    "resultsTitle": {
+      "type": "text"
+    },
+    "likelyText": {
+      "type": "text"
+    },
+    "AiText": {
+      "type": "text"
+    },
+    "humanText": {
+      "type": "text"
+    },
+    "resultsSubtitle": {
+      "type": "text"
+    },
+    "testsFailedText": {
+      "type": "text"
+    },
+    "gptZeroText": {
+      "type": "text"
+    },
+    "openAIText": {
+      "type": "text"
+    },
+    "writerText": {
+      "type": "text"
+    },
+    "crossPlagText": {
+      "type": "text"
+    },
+    "copyLeaksText": {
+      "type": "text"
+    },
+    "saplingText": {
+      "type": "text"
+    },
+    "contentAtScaleText": {
+      "type": "text"
+    },
+    "zeroGptText": {
+      "type": "text"
+    },
+    "recentDetectionsText": {
+      "type": "text"
+    },
+    "viewRecentDetectionsText": {
+      "type": "text"
+    },
+    "viewRecentDetectionsBtn": {
+      "type": "text"
+    },
+    "loadingText": {
+      "type": "text"
+    },
+    "detectionInfoText": {
+      "type": "text"
+    },
+    "testsPassedText": {
+      "type": "text"
+    }
+  }
+}

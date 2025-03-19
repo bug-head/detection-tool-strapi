@@ -1,0 +1,108 @@
+{
+  "kind": "singleType",
+  "collectionName": "recent_detections",
+  "info": {
+    "singularName": "recent-detection",
+    "pluralName": "recent-detections",
+    "displayName": "Recent Detection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tableHeading": {
+      "type": "text"
+    },
+    "tableSearch": {
+      "type": "text"
+    },
+    "tableDate": {
+      "type": "text"
+    },
+    "tableText": {
+      "type": "text"
+    },
+    "tableResult": {
+      "type": "text"
+    },
+    "tableActions": {
+      "type": "text"
+    },
+    "tableAboutHours": {
+      "type": "text"
+    },
+    "tableLessHours": {
+      "type": "text"
+    },
+    "tableHumanbadge": {
+      "type": "text"
+    },
+    "tableAibadge": {
+      "type": "text"
+    },
+    "tablePaginationFirst": {
+      "type": "text"
+    },
+    "tablePaginationSecond": {
+      "type": "text"
+    },
+    "tableNextBtn": {
+      "type": "text"
+    },
+    "tablePreviousBtn": {
+      "type": "text"
+    },
+    "tableDeleteDetection": {
+      "type": "text"
+    },
+    "tableDeleteDetectionSub": {
+      "type": "text"
+    },
+    "tableCancel": {
+      "type": "text"
+    },
+    "tableDeleteBtn": {
+      "type": "text"
+    },
+    "tableDeleteLoadingBtn": {
+      "type": "text"
+    },
+    "tableDeleteDetectionSuccess": {
+      "type": "text"
+    },
+    "tableCopiedText": {
+      "type": "text"
+    },
+    "failedDetectionText": {
+      "type": "text"
+    },
+    "failedCopiedText": {
+      "type": "text"
+    },
+    "loadingDetections": {
+      "type": "text"
+    },
+    "noDetectionsText": {
+      "type": "text"
+    },
+    "copyIcon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "deleteIcon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,7 +1,32 @@
-module.exports = [
+module.exports = ({ env }) => [
   'strapi::logger',
   'strapi::errors',
-  'strapi::security',
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          'connect-src': ["'self'", 'https:'],
+          'img-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'market-assets.strapi.io',
+            `${env('AWS2_BUCKET')}.s3.${env('AWS2_REGION')}.amazonaws.com`,
+          ],
+          'media-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'market-assets.strapi.io',
+            `${env('AWS2_BUCKET')}.s3.${env('AWS2_REGION')}.amazonaws.com`,
+          ],
+          upgradeInsecureRequests: null,
+        },
+      },
+    },
+  },
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::query',
@@ -10,3 +35,9 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 ];
+
+
+
+
+
+
