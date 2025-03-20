@@ -4,7 +4,8 @@
   "info": {
     "singularName": "term",
     "pluralName": "terms",
-    "displayName": "Term"
+    "displayName": "Term",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,9 @@
   "attributes": {
     "terms": {
       "type": "blocks"
+    },
+    "termsText": {
+      "type": "richtext"
     }
   }
 }

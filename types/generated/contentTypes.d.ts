@@ -472,6 +472,7 @@ export interface ApiDashboardDashboard extends Struct.SingleTypeSchema {
     gptZeroText: Schema.Attribute.Text;
     humanBtn: Schema.Attribute.Text;
     humanText: Schema.Attribute.Text;
+    iAcceptText: Schema.Attribute.Text;
     likelyText: Schema.Attribute.Text;
     loadingText: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -489,6 +490,8 @@ export interface ApiDashboardDashboard extends Struct.SingleTypeSchema {
     resultsTitle: Schema.Attribute.Text;
     sampleText: Schema.Attribute.Text;
     saplingText: Schema.Attribute.Text;
+    termsConditionsText: Schema.Attribute.Text;
+    termsToast: Schema.Attribute.Text;
     testsFailedText: Schema.Attribute.Text;
     testsPassedText: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
@@ -717,6 +720,7 @@ export interface ApiLoginLogin extends Struct.SingleTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     signinBtn: Schema.Attribute.Text;
     signingLoadingText: Schema.Attribute.Text;
+    signUpText: Schema.Attribute.Text;
     subtitle: Schema.Attribute.Text;
     title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
@@ -728,6 +732,7 @@ export interface ApiLoginLogin extends Struct.SingleTypeSchema {
 export interface ApiPrivacyPrivacy extends Struct.SingleTypeSchema {
   collectionName: 'privacies';
   info: {
+    description: '';
     displayName: 'Privacy';
     pluralName: 'privacies';
     singularName: 'privacy';
@@ -745,7 +750,7 @@ export interface ApiPrivacyPrivacy extends Struct.SingleTypeSchema {
       'api::privacy.privacy'
     > &
       Schema.Attribute.Private;
-    privacy: Schema.Attribute.Blocks;
+    privacyText: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -766,13 +771,9 @@ export interface ApiRecentDetectionRecentDetection
     draftAndPublish: true;
   };
   attributes: {
-    copyIcon: Schema.Attribute.Media<'images'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    deleteIcon: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios'
-    >;
     failedCopiedText: Schema.Attribute.Text;
     failedDetectionText: Schema.Attribute.Text;
     loadingDetections: Schema.Attribute.Text;
@@ -784,7 +785,6 @@ export interface ApiRecentDetectionRecentDetection
       Schema.Attribute.Private;
     noDetectionsText: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
-    tableAboutHours: Schema.Attribute.Text;
     tableActions: Schema.Attribute.Text;
     tableAibadge: Schema.Attribute.Text;
     tableCancel: Schema.Attribute.Text;
@@ -797,7 +797,6 @@ export interface ApiRecentDetectionRecentDetection
     tableDeleteLoadingBtn: Schema.Attribute.Text;
     tableHeading: Schema.Attribute.Text;
     tableHumanbadge: Schema.Attribute.Text;
-    tableLessHours: Schema.Attribute.Text;
     tableNextBtn: Schema.Attribute.Text;
     tablePaginationFirst: Schema.Attribute.Text;
     tablePaginationSecond: Schema.Attribute.Text;
@@ -811,11 +810,59 @@ export interface ApiRecentDetectionRecentDetection
   };
 }
 
+export interface ApiResetPasswordResetPassword extends Struct.SingleTypeSchema {
+  collectionName: 'reset_passwords';
+  info: {
+    description: '';
+    displayName: 'Reset Password';
+    pluralName: 'reset-passwords';
+    singularName: 'reset-password';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    backToLogin: Schema.Attribute.Text;
+    confirmPassword: Schema.Attribute.Text;
+    confirmPasswordError: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    createNewText: Schema.Attribute.Text;
+    failedToReset: Schema.Attribute.Text;
+    heading: Schema.Attribute.Text;
+    invalidToken: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::reset-password.reset-password'
+    > &
+      Schema.Attribute.Private;
+    newPassword: Schema.Attribute.Text;
+    passwordCharacters: Schema.Attribute.Text;
+    passwordHasBeenReset: Schema.Attribute.Text;
+    passwordMisMatch: Schema.Attribute.Text;
+    passwordRequired: Schema.Attribute.Text;
+    passwordSuccess: Schema.Attribute.Text;
+    publishedAt: Schema.Attribute.DateTime;
+    resetPasswordBtn: Schema.Attribute.Text;
+    resetPasswordLoadingBtn: Schema.Attribute.Text;
+    retryBtn: Schema.Attribute.Text;
+    somethingWentWrong: Schema.Attribute.Text;
+    subHeading: Schema.Attribute.Text;
+    submitError: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    withNewPassword: Schema.Attribute.Text;
+  };
+}
+
 export interface ApiSignUpSignUp extends Struct.SingleTypeSchema {
   collectionName: 'sign_ups';
   info: {
     description: '';
-    displayName: 'Sign In';
+    displayName: 'Sign Up';
     pluralName: 'sign-ups';
     singularName: 'sign-up';
   };
@@ -836,6 +883,7 @@ export interface ApiSignUpSignUp extends Struct.SingleTypeSchema {
     fullnamePlaceholder: Schema.Attribute.Text;
     getStartedBtn: Schema.Attribute.Text;
     getStartedLoadingText: Schema.Attribute.Text;
+    invalidEmail: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -844,12 +892,15 @@ export interface ApiSignUpSignUp extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     misMatchPasswordText: Schema.Attribute.Text;
     nameRequiredText: Schema.Attribute.Text;
-    passwordError: Schema.Attribute.Text;
+    passwordCharacters: Schema.Attribute.Text;
     passwordPlaceholder: Schema.Attribute.Text;
     passwordRequiredText: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
     signInFailed: Schema.Attribute.Text;
     signInText: Schema.Attribute.Text;
+    signUpText: Schema.Attribute.Text;
+    somethingWentWrong: Schema.Attribute.Text;
+    submitError: Schema.Attribute.Text;
     subtitle: Schema.Attribute.Text;
     title: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
@@ -861,6 +912,7 @@ export interface ApiSignUpSignUp extends Struct.SingleTypeSchema {
 export interface ApiTermTerm extends Struct.SingleTypeSchema {
   collectionName: 'terms';
   info: {
+    description: '';
     displayName: 'Term';
     pluralName: 'terms';
     singularName: 'term';
@@ -877,6 +929,7 @@ export interface ApiTermTerm extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     terms: Schema.Attribute.Blocks;
+    termsText: Schema.Attribute.RichText;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1403,6 +1456,7 @@ declare module '@strapi/strapi' {
       'api::login.login': ApiLoginLogin;
       'api::privacy.privacy': ApiPrivacyPrivacy;
       'api::recent-detection.recent-detection': ApiRecentDetectionRecentDetection;
+      'api::reset-password.reset-password': ApiResetPasswordResetPassword;
       'api::sign-up.sign-up': ApiSignUpSignUp;
       'api::term.term': ApiTermTerm;
       'plugin::content-releases.release': PluginContentReleasesRelease;

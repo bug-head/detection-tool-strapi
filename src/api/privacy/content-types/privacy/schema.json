@@ -4,14 +4,15 @@
   "info": {
     "singularName": "privacy",
     "pluralName": "privacies",
-    "displayName": "Privacy"
+    "displayName": "Privacy",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
-    "privacy": {
-      "type": "blocks"
+    "privacyText": {
+      "type": "richtext"
     }
   }
 }

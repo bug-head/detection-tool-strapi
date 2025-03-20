@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "reset_passwords",
+  "info": {
+    "singularName": "reset-password",
+    "pluralName": "reset-passwords",
+    "displayName": "Reset Password",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "heading": {
+      "type": "text"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "newPassword": {
+      "type": "text"
+    },
+    "confirmPassword": {
+      "type": "text"
+    },
+    "resetPasswordBtn": {
+      "type": "text"
+    },
+    "submitError": {
+      "type": "text"
+    },
+    "invalidToken": {
+      "type": "text"
+    },
+    "passwordRequired": {
+      "type": "text"
+    },
+    "passwordCharacters": {
+      "type": "text"
+    },
+    "confirmPasswordError": {
+      "type": "text"
+    },
+    "passwordMisMatch": {
+      "type": "text"
+    },
+    "failedToReset": {
+      "type": "text"
+    },
+    "somethingWentWrong": {
+      "type": "text"
+    },
+    "retryBtn": {
+      "type": "text"
+    },
+    "passwordHasBeenReset": {
+      "type": "text"
+    },
+    "createNewText": {
+      "type": "text"
+    },
+    "resetPasswordLoadingBtn": {
+      "type": "text"
+    },
+    "passwordSuccess": {
+      "type": "text"
+    },
+    "withNewPassword": {
+      "type": "text"
+    },
+    "backToLogin": {
+      "type": "text"
+    }
+  }
+}

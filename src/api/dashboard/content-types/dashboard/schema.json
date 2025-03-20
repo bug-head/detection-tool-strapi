@@ -109,6 +109,15 @@
     },
     "testsPassedText": {
       "type": "text"
+    },
+    "iAcceptText": {
+      "type": "text"
+    },
+    "termsConditionsText": {
+      "type": "text"
+    },
+    "termsToast": {
+      "type": "text"
     }
   }
 }

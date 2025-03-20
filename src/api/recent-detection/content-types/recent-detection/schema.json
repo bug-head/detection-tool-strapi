@@ -29,12 +29,6 @@
     "tableActions": {
       "type": "text"
     },
-    "tableAboutHours": {
-      "type": "text"
-    },
-    "tableLessHours": {
-      "type": "text"
-    },
     "tableHumanbadge": {
       "type": "text"
     },
@@ -85,24 +79,6 @@
     },
     "noDetectionsText": {
       "type": "text"
-    },
-    "copyIcon": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": false
-    },
-    "deleteIcon": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }

@@ -54,6 +54,9 @@
     },
     "signingLoadingText": {
       "type": "text"
+    },
+    "signUpText": {
+      "type": "text"
     }
   }
 }

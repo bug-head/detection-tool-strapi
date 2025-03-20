@@ -4,7 +4,7 @@
   "info": {
     "singularName": "sign-up",
     "pluralName": "sign-ups",
-    "displayName": "Sign In",
+    "displayName": "Sign Up",
     "description": ""
   },
   "options": {
@@ -24,9 +24,6 @@
       "type": "text"
     },
     "passwordPlaceholder": {
-      "type": "text"
-    },
-    "passwordError": {
       "type": "text"
     },
     "confirmPasswordPlaceholder": {
@@ -66,6 +63,21 @@
       "type": "text"
     },
     "signInFailed": {
+      "type": "text"
+    },
+    "signUpText": {
+      "type": "text"
+    },
+    "invalidEmail": {
+      "type": "text"
+    },
+    "passwordCharacters": {
+      "type": "text"
+    },
+    "somethingWentWrong": {
+      "type": "text"
+    },
+    "submitError": {
       "type": "text"
     }
   }
