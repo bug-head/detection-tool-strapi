@@ -369,37 +369,6 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiContactUsContactUs extends Struct.CollectionTypeSchema {
-  collectionName: 'contact_uses';
-  info: {
-    displayName: 'Contact Us';
-    pluralName: 'contact-uses';
-    singularName: 'contact-us';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    email: Schema.Attribute.Text;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::contact-us.contact-us'
-    > &
-      Schema.Attribute.Private;
-    message: Schema.Attribute.Text;
-    name: Schema.Attribute.Text;
-    publishedAt: Schema.Attribute.DateTime;
-    subject: Schema.Attribute.Text;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiContactContact extends Struct.SingleTypeSchema {
   collectionName: 'contacts';
   info: {
@@ -1445,7 +1414,6 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::contact-us.contact-us': ApiContactUsContactUs;
       'api::contact.contact': ApiContactContact;
       'api::dashboard.dashboard': ApiDashboardDashboard;
       'api::forgot-password.forgot-password': ApiForgotPasswordForgotPassword;
